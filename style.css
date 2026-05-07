@@ -1,1 +1,18 @@
- 
+h1 {
+    color:#077caa;
+    font-style:italic;
+}
+
+body {
+    background-color: #121b2c;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+button {
+    background-color:#077caa;
+    color:#ffffff;
+}
