@@ -52,3 +52,24 @@ button:hover {
     background-color: #0eabe9;
     color: #05658b;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #9c27ca;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #05658b;
+    background-color: #121b2c;
+    color: #ffffff;
+    box-sizing: border-box;
+}
