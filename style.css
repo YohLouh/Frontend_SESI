@@ -18,13 +18,12 @@ body {
 
 h1 {
     color:#4cccff;
-    font-style:italic;
     text-align: center;
 }
 
 h3 { 
     color: #078ec4;
-    border-bottom: 1px solid hsl(0, 0%, 100%);
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 5px;
 }
 
@@ -50,7 +49,7 @@ button {
 
 button:hover {
     background-color: #0eabe9;
-    color: #05658b;
+    color: #045c7f;
 }
 
 ul {
@@ -72,4 +71,10 @@ input, select {
     background-color: #121b2c;
     color: #ffffff;
     box-sizing: border-box;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
 }
