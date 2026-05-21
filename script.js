@@ -29,6 +29,28 @@ function executarSistema(){
         // Estoque
         let estoque = ["Placa de vídeo", "Processador", "Memória RAM"];
         lista.innerHTML = ""; // Limpa a lista anterior
+
+        // forEach: percorre o array e aplica uma ação pra cada elemento
+        estoque.forEach(item => {
+            let li = document.createElement("li");
+            li.innerText = `Item ${item} reservado.`;
+            lista.appendChild(li);  // usado para adicionar novo elemento
+        });
+
+        // Relatório
+        relatorio.style.display = "block";
+        relatorio.innerHTML = `
+        <strong> RESUMO DO PEDIDO <\strong><br>
+        Cliente: ${nome} <br>
+        Total Original: R$ ${valor.toFixed(2)} <br>
+        <strong> Total com Desconto: R$ ${valorFinal.toFixed(2)} <\strong>`;
+
+    } else {
+        msg.innerText = `Venda bloqueada: Menor de 16 anos.`;
+        msg.style.color = "#ff4444";
+        relatorio.style.display = "none";
+        lista.innerHTML = "";
     }
+
 
 }
