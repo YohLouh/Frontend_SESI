@@ -31,7 +31,7 @@ h3 {
     background: #077caa;
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #9c27ca;
+    border-left: 5px solid #7aff77;
 }
 
 button {
@@ -59,7 +59,7 @@ ul {
 
 li {
     padding: 5px 0;
-    color: #9c27ca;
+    color: #4cccff;
 }
 
 input, select {
