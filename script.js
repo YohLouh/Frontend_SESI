@@ -2,6 +2,7 @@ function executarSistema() {
 
     // Tratamento de erros para o sistema não quebrar vvv
     try {
+        
         // Dados de entrada
         /* document.getElementById("---").value puxa
         dados colocados no site pelo ID do elemento */
