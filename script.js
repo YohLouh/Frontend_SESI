@@ -5,6 +5,8 @@ const inputNome = document.getElementById("inputNome");
 const inputIdade = document.getElementById("inputIdade");
 const inputValor = document.getElementById("inputValor");
 const inputCupom = document.getElementById("inputCupom");
+const modal = document.getElementById("modal");
+const btnFechar = document.getElementById("btn-fechar");
 
 // Dados de saída
 const msg = document.getElementById("mensagem-autorizacao");
@@ -128,6 +130,7 @@ btnHistorico.addEventListener('click', mostrarHistorico);
 function mostrarHistorico(){
 
     const dadosSalvos = localStorage.getItem('userInfoLista');
+    modal.showModal();
 
     if(dadosSalvos){
         // Converte para objeto JS novamente
@@ -156,3 +159,7 @@ function mostrarHistorico(){
     }
 
 }
+
+btnFechar.addEventListener('click', () => {
+    modal.close();
+});
