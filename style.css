@@ -82,10 +82,19 @@ hr {
 dialog {
     border: none;
     border-radius: 10px;
+    text-align: center;
     padding: 20px;
     box-shadow: 0 4px 10px #121b2c;
+    background-color: #ffffff;
+    width: 500px;
+    height: 650px;
 }
 
+/* O backdrop muda a parte atrás do dialog/modal */
 dialog::backdrop {
     background-color: transparent;
+}
+
+dialog strong {
+    color: #078ec4;
 }

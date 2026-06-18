@@ -1,4 +1,5 @@
 // Dados de entrada
+
 /* document.getElementById("---").value puxa
    dados colocados no site pelo ID do elemento */
 const inputNome = document.getElementById("inputNome");
@@ -45,7 +46,7 @@ function executarSistema() {
 
             // Pro botão voltar vvv
             btnFinalizar.disabled = false;
-            btnFinalizar.innerText = "Finalizar";
+            btnFinalizar.innerText = "Finalizar Venda";
             return;
         }
 
@@ -148,7 +149,7 @@ function mostrarHistorico(){
             Cliente: ${venda.nome} <br>
             Idade: ${venda.idade} anos <br>
             Total Final: R$ ${venda.valorFinal} <br>
-            ---------------------------------<br>`;
+            -------------------------------------------------<br>`;
         });
 
         conteudoModal.innerHTML = textoRelatorio;
