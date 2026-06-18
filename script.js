@@ -7,6 +7,7 @@ const inputValor = document.getElementById("inputValor");
 const inputCupom = document.getElementById("inputCupom");
 const modal = document.getElementById("modal");
 const btnFechar = document.getElementById("btn-fechar");
+const conteudoModal = document.getElementById("conteudo-modal");
 
 // Dados de saída
 const msg = document.getElementById("mensagem-autorizacao");
@@ -130,7 +131,8 @@ btnHistorico.addEventListener('click', mostrarHistorico);
 function mostrarHistorico(){
 
     const dadosSalvos = localStorage.getItem('userInfoLista');
-    modal.showModal();
+
+    conteudoModal.innerHTML = "";
 
     if(dadosSalvos){
         // Converte para objeto JS novamente
@@ -149,7 +151,7 @@ function mostrarHistorico(){
             ---------------------------------<br>`;
         });
 
-        relatorio.innerHTML = textoRelatorio;
+        conteudoModal.innerHTML = textoRelatorio;
 
     } else {
         msg.innerText = `Nenhum histórico de venda encontrado no navegador!`;
@@ -158,6 +160,7 @@ function mostrarHistorico(){
         lista.innerHTML = "";
     }
 
+    modal.showModal();
 }
 
 btnFechar.addEventListener('click', () => {

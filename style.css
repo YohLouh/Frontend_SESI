@@ -87,5 +87,5 @@ dialog {
 }
 
 dialog::backdrop {
-    background: #4cccff;
+    background-color: transparent;
 }
