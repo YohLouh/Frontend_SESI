@@ -40,7 +40,7 @@ function executarSistema() {
 
 
         // Validação para campos vazios
-        if (!nome || isNaN(idade) || isNaN(valor)) {
+        if (!nome || isNaN(idade) || idade > 110 || isNaN(valor) || valor <= 0) {
             msg.innerText = "Preencha todos os campos corretamente!";
             msg.style.color = "#ff4444";
 
