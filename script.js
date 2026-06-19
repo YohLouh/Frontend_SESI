@@ -155,8 +155,8 @@ function mostrarHistorico(){
         conteudoModal.innerHTML = textoRelatorio;
 
     } else {
-        msg.innerText = `Nenhum histórico de venda encontrado no navegador!`;
-        msg.style.color = "#ff4444";
+        conteudoModal.innerHTML =  `Nenhum histórico de venda encontrado no navegador!`;
+        conteudoModal.style.color = "#ff4444";
         relatorio.style.display = "none";
         lista.innerHTML = "";
     }
