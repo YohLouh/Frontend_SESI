@@ -44,6 +44,8 @@ function executarSistema() {
             msg.innerText = "Preencha todos os campos corretamente!";
             msg.style.color = "#ff4444";
 
+            relatorio.style.display = "none";
+
             // Pro botão voltar vvv
             btnFinalizar.disabled = false;
             btnFinalizar.innerText = "Finalizar Venda";
@@ -139,7 +141,6 @@ function mostrarHistorico(){
         // Converte para objeto JS novamente
         const venda = JSON.parse(dadosSalvos);
 
-        relatorio.style.display = "block";
         let textoRelatorio = `<strong> HISTÓRICO DE VENDAS </strong><br><br>`
 
         // Como há uma lista, precisa-se de um laço de repetição para correr por ela
