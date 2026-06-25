@@ -140,11 +140,12 @@ function mostrarHistorico(){
     if(dadosSalvos){
         // Converte para objeto JS novamente
         const venda = JSON.parse(dadosSalvos);
-
+        
         let textoRelatorio = `<strong> HISTÓRICO DE VENDAS </strong><br><br>`
 
         // Como há uma lista, precisa-se de um laço de repetição para correr por ela
         venda.forEach((venda, index) => {
+            conteudoModal.style.color = "#fffff";
             textoRelatorio += `
             <strong> ${index + 1}° Venda: </strong><br>
             Cliente: ${venda.nome} <br>
