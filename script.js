@@ -145,7 +145,7 @@ function mostrarHistorico(){
 
         // Como há uma lista, precisa-se de um laço de repetição para correr por ela
         venda.forEach((venda, index) => {
-            conteudoModal.style.color = "#fffff";
+            conteudoModal.style.color = "#3c3c3c";
             textoRelatorio += `
             <strong> ${index + 1}° Venda: </strong><br>
             Cliente: ${venda.nome} <br>
